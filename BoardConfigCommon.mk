@@ -74,6 +74,7 @@ endif
 
 DEVICE_MANIFEST_FILES += \
     $(COMMON_PATH)/vintf/manifest_samsung.xml \
+    $(COMMON_PATH)/vintf/lineage_manifest.xml \
     hardware/qcom-caf/sm8550/audio/primary-hal/configs/common/manifest_non_qmaa.xml \
     hardware/qcom-caf/sm8550/audio/primary-hal/configs/common/manifest_non_qmaa_extn.xml
 
