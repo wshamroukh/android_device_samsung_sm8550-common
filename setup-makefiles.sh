@@ -67,8 +67,16 @@ setup_vendor "${DEVICE_COMMON}" "${VENDOR_COMMON:-$VENDOR}" "${ANDROID_ROOT}" tr
 # Warning headers and guards
 write_headers "dm1q dm2q dm3q"
 
-# The standard common blobs
-write_makefiles "${MY_DIR}/proprietary-files.txt"
+case "$DEVICE" in
+    gts9wifi|gts9uwifi|gts9|gts9p|gts9u)
+        # The standard common blobs for tablet
+        write_makefiles "${MY_DIR}/proprietary-files-tablet.txt"
+        ;;
+    *)
+        # The standard common blobs
+        write_makefiles "${MY_DIR}/proprietary-files.txt"
+        ;;
+esac
 
 # Finish
 write_footers
