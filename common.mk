@@ -231,6 +231,7 @@ PRODUCT_PACKAGES += \
     FrameworksResCommon \
     FrameworksResSamsung \
     FrameworksResTarget \
+    FrameworksSettingsLib \
     SettingsResCommon \
     SettingsResSamsung \
     SystemUIResCommon \
