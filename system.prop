@@ -28,3 +28,4 @@ persist.log.tag.ShortcutService=S
 persist.log.tag.MediaSessionService=S
 persist.log.tag.vol.VolumeDialogImpl=S
 persist.log.tag.AconfigFlags=S
+persist.log.tag.vendor.samsung.hardware.thermal@1.0-service=S
