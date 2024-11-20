@@ -156,6 +156,15 @@ on boot
     chmod 0660 /sys/class/rfkill/rfkill0/device/extldo
     chown media audio /sys/kernel/snd_card/card_state
 
+    # Power Hal
+    chmod 0660 /sys/class/kgsl/kgsl-3d0/devfreq/min_freq
+    chmod 0660 /sys/devices/system/cpu/cpu0/cpufreq/scaling_min_freq
+    chmod 0660 /sys/devices/system/cpu/cpu3/cpufreq/scaling_min_freq
+    chmod 0660 /sys/devices/system/cpu/cpu7/cpufreq/scaling_min_freq
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy0/walt/down_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy3/walt/down_rate_limit_us
+    chmod 0660 /sys/devices/system/cpu/cpufreq/policy7/walt/down_rate_limit_us
+
     # This location is used by QCRIL to host UNIX domain
     # socket files used for internal IPC within QCRIL
     # modules
