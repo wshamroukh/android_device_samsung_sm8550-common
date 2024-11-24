@@ -399,6 +399,10 @@ on post-fs-data
     write /data/vendor/radio/db_check_done 0
     chown radio radio /data/vendor/radio/db_check_done
     chmod 0660 /data/vendor/radio/db_check_done
+    
+    # Set permission for fastcharger
+    chown system system /sys/class/sec/switch/afc_disable
+    chmod 0660 /sys/class/sec/switch/afc_disable
 
     #Create SWAP related dirs
     mkdir /data/vendor/swap 0770 root system
