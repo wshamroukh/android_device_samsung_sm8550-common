@@ -98,7 +98,7 @@ TARGET_KERNEL_EXT_MODULE_ROOT := kernel/samsung/sm8550-modules
 BOARD_USES_METADATA_PARTITION := true
 
 # Partitions
--include vendor/lineage/config/BoardConfigReservedSize.mk
+-include vendor/voltage/config/BoardConfigReservedSize.mk
 BOARD_PRODUCTIMAGE_MINIMAL_PARTITION_RESERVED_SIZE := false
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
@@ -167,8 +167,8 @@ BOOT_SECURITY_PATCH := 2024-11-01
 VENDOR_SECURITY_PATCH := $(BOOT_SECURITY_PATCH)
 
 # SEPolicy
-include device/lineage/sepolicy/libperfmgr/sepolicy.mk
 include device/qcom/sepolicy_vndr/SEPolicy.mk
+include device/voltage/sepolicy/libperfmgr/sepolicy.mk
 BOARD_VENDOR_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/vendor
 PRODUCT_PRIVATE_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/private
 PRODUCT_PUBLIC_SEPOLICY_DIRS += $(COMMON_PATH)/sepolicy/public
